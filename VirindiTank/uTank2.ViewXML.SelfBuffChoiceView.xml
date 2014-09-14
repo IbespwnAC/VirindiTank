@@ -1,0 +1,11 @@
+﻿<?xml version="1.0"?>
+<!-- Icons: puzzle piece 8241, gear 9660 -->
+<view icon="8241" title="Virindi Tank - Choose Extra Buffs" width="268" height="236">
+  <control progid="DecalControls.FixedLayout" clipped="">
+	<control progid="DecalControls.List" name="lExemplarList" left="4" top="4" width="260" height="160">
+	  <column progid="DecalControls.TextColumn" name="clVal"/>
+	</control>
+	<control progid="DecalControls.StaticText" name="lblSearch" left="4" top="168" width="384" height="16" text="Search:"/>
+	<control progid="DecalControls.Edit" name="txtSearch" left="4" top="188" width="260" height="16" imageportalsrc="4726" text=""/>
+  </control>
+</view>

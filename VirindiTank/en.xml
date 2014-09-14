@@ -1,0 +1,10 @@
+﻿<?xml version="1.0"?>
+<!-- Icons: puzzle piece 8241, gear 9660 -->
+<view icon="8241" title="Virindi Tank Debug" width="268" height="300">
+  <control progid="DecalControls.FixedLayout" clipped="">
+	<control progid="DecalControls.List" name="lRefcounts" left="4" top="4" width="260" height="260">
+	  <column progid="DecalControls.TextColumn" name="clType" fixedwidth="180"/>
+	  <column progid="DecalControls.TextColumn" name="clCount" fixedwidth="62"/>
+	</control>
+  </control>
+</view>

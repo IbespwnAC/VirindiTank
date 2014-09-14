@@ -1,0 +1,277 @@
+﻿<?xml version="1.0"?>
+<view icon="10667" title="uTank2" width="792" height="210">
+	<control progid="DecalControls.Notebook" name="MainTabs">
+		<page label="Options">
+			<control progid="DecalControls.FixedLayout" clipped="">
+				<control progid="DecalControls.StaticText" name="Label12" left="8" top="8" width="80" height="16" text="Monster range:"/>
+				<control progid="DecalControls.Edit" name="txtRange" left="8" top="24" width="40" height="16" imageportalsrc="4726" text=""/>
+				<control progid="DecalControls.StaticText" name="Label22" left="8" top="40" width="80" height="16" text="Ring range:"/>
+				<control progid="DecalControls.Edit" name="txtRingRange" left="8" top="56" width="40" height="16" imageportalsrc="4726" text=""/>
+				<control progid="DecalControls.StaticText" name="Label23" left="8" top="72" width="80" height="16" text="Approach range:"/>
+				<control progid="DecalControls.Edit" name="txtApproachRange" left="8" top="88" width="40" height="16" imageportalsrc="4726" text=""/>
+				<control progid="DecalControls.StaticText" name="Label24" left="8" top="104" width="80" height="16" text="Follow/Nav min distance:"/>
+				<control progid="DecalControls.Edit" name="txtWPRange" left="8" top="120" width="40" height="16" imageportalsrc="4726" text=""/>
+
+				<control progid="DecalControls.PushButton" name="bForceBuff" left="90" top="8" width="112" height="20" text="Force Buff"/>
+				<control progid="DecalControls.PushButton" name="bCancelForceBuff" left="90" top="33" width="112" height="20" text="Cancel Force Buff"/>
+				<control progid="DecalControls.Checkbox" name="cGems" left="90" top="58" width="120" height="20" text="Use dispel items"/>
+				<control progid="DecalControls.Checkbox" name="cDispel" left="90" top="78" width="120" height="20" text="Cast dispel self"/>
+				<control progid="DecalControls.Checkbox" name="cEnableBuffing" left="90" top="98" width="120" height="20" text="Enable Buffing"/>
+				<control progid="DecalControls.Checkbox" name="cEnableCombat" left="90" top="118" width="120" height="20" text="Enable Combat"/>
+				<control progid="DecalControls.Checkbox" name="cAutoFellow" left="90" top="138" width="120" height="20" text="Auto Fellow Mgmt."/>
+
+				<control progid="DecalControls.Checkbox" name="cEnableAutoStack" left="220" top="8" width="160" height="20" text="Enable Autostack"/>
+				<control progid="DecalControls.Checkbox" name="cEnableAutoCram" left="220" top="28" width="160" height="20" text="Enable Autocram"/>
+				<control progid="DecalControls.Checkbox" name="cTopoffBuffs" left="220" top="48" width="160" height="20" text="Rebuff when idle"/>
+				<control progid="DecalControls.Checkbox" name="cIdlePeace" left="220" top="68" width="160" height="20" text="Peace mode when idle"/>
+				<control progid="DecalControls.Checkbox" name="cLootPriorityBoost" left="220" top="88" width="160" height="20" text="Boost loot priority"/>
+				<control progid="DecalControls.Checkbox" name="cMChargesWhenOff" left="220" top="108" width="160" height="20" text="M. Charges when off"/>
+
+				<control progid="DecalControls.Checkbox" name="cShowAdvanced" left="330" top="128" width="233" height="20" text="Advanced options"/>
+				<control progid="DecalControls.Checkbox" name="cOn" left="330" top="148" width="233" height="20" text="Run macro"/>
+			</control>
+		</page>
+		<page label="Profiles">
+			<control progid="DecalControls.FixedLayout" clipped="">
+				<control progid="DecalControls.StaticText" name="Label123" left="8" top="8" width="142" height="16" text="Macro Settings"/>
+				<control progid="DecalControls.Choice" name="cmbSettingsSet" left="140" top="8" width="140" height="20" />
+				<control progid="DecalControls.PushButton" name="bSettingsSaveAs" left="280" top="8" width="40" height="20" text="CopyTo"/>
+				<control progid="DecalControls.Checkbox" name="cSettingsShowAll" left="440" top="8" width="80" height="20" text="Mine only"/>
+				<control progid="DecalControls.PushButton" name="bSettingsReset" left="330" top="8" width="100" height="20" text="Clear profile!"/>
+
+				<control progid="DecalControls.Checkbox" name="cNav" left="8" top="32" width="142" height="20" text="Enable Auto-Navigation"/>
+				<control progid="DecalControls.Choice" name="cmbNavSet" left="140" top="32" width="140" height="20" />
+				<control progid="DecalControls.PushButton" name="bNavSaveAs" left="280" top="32" width="40" height="20" text="CopyTo"/>
+				<control progid="DecalControls.PushButton" name="bNavReset" left="330" top="32" width="100" height="20" text="Clear nav profile!"/>
+
+				<control progid="DecalControls.Checkbox" name="cLoot" left="8" top="56" width="142" height="20" text="Enable Looting"/>
+				<control progid="DecalControls.Choice" name="cmbLootSet" left="140" top="56" width="140" height="20" />
+				<control progid="DecalControls.PushButton" name="bLootSaveAs" left="280" top="56" width="40" height="20" text="New"/>
+				<control progid="DecalControls.Checkbox" name="cShowLootEditor" left="440" top="56" width="80" height="20" text="Show Editor"/>
+
+				<control progid="DecalControls.Checkbox" name="cMeta" left="8" top="80" width="142" height="20" text="Enable Meta Actions"/>
+				<control progid="DecalControls.Choice" name="cmbMetaSet" left="140" top="80" width="140" height="20" />
+				<control progid="DecalControls.PushButton" name="bMetaSaveAs" left="280" top="80" width="40" height="20" text="CopyTo"/>
+
+			</control>
+		</page>
+		<page label="Vitals">
+			<control progid="DecalControls.FixedLayout" clipped="">
+
+				<control progid="DecalControls.StaticText" name="Label1" left="8" top="0" width="80" height="16" text="Heal at:"/>
+				<control progid="DecalControls.StaticText" name="Label2" left="8" top="16" width="80" height="16" text="Restam at:"/>
+				<control progid="DecalControls.StaticText" name="Label3" left="8" top="32" width="80" height="16" text="Get Mana at:"/>
+				<control progid="DecalControls.Slider" name="slMyHP" left="96" top="0" width="144" height="16" minimum="0" maximum="100" textcolor="0" vertical="0"/>
+				<control progid="DecalControls.Slider" name="slMyStam" left="96" top="16" width="144" height="16" minimum="0" maximum="100" textcolor="0" vertical="0"/>
+				<control progid="DecalControls.Slider" name="slMyMana" left="96" top="32" width="144" height="16" minimum="0" maximum="100" textcolor="0" vertical="0"/>
+
+				<control progid="DecalControls.StaticText" name="Label11" left="8" top="56" width="80" height="16" text="Top-off HP:"/>
+				<control progid="DecalControls.StaticText" name="Label21" left="8" top="72" width="80" height="16" text="Top-off Stam:"/>
+				<control progid="DecalControls.StaticText" name="Label31" left="8" top="88" width="80" height="16" text="Top-off Mana:"/>
+				<control progid="DecalControls.Slider" name="slTopOffHP" left="96" top="56" width="144" height="16" minimum="0" maximum="100" textcolor="0" vertical="0"/>
+				<control progid="DecalControls.Slider" name="slTopOffStam" left="96" top="72" width="144" height="16" minimum="0" maximum="100" textcolor="0" vertical="0"/>
+				<control progid="DecalControls.Slider" name="slTopOffMana" left="96" top="88" width="144" height="16" minimum="0" maximum="100" textcolor="0" vertical="0"/>
+
+				<control progid="DecalControls.StaticText" name="Label111" left="8" top="112" width="80" height="16" text="Heal others at:"/>
+				<control progid="DecalControls.StaticText" name="Label211" left="8" top="128" width="80" height="16" text="Restam others at:"/>
+				<control progid="DecalControls.StaticText" name="Label311" left="8" top="144" width="80" height="16" text="Infuse others at:"/>
+				<control progid="DecalControls.Slider" name="slOtherHP" left="96" top="112" width="144" height="16" minimum="0" maximum="100" textcolor="0" vertical="0"/>
+				<control progid="DecalControls.Slider" name="slOtherStam" left="96" top="128" width="144" height="16" minimum="0" maximum="100" textcolor="0" vertical="0"/>
+				<control progid="DecalControls.Slider" name="slOtherMana" left="96" top="144" width="144" height="16" minimum="0" maximum="100" textcolor="0" vertical="0"/>
+			</control>
+
+		</page>
+		<page label="Monsters">
+			<control progid="DecalControls.FixedLayout" clipped="">
+				<control progid="DecalControls.List" name="lstMonsters" left="0" top="16" width="792" height="116">
+					<column progid="DecalControls.CheckColumn" name="clFester" fixedwidth="16"/>
+					<column progid="DecalControls.CheckColumn" name="clBroadside" fixedwidth="16"/>
+					<column progid="DecalControls.CheckColumn" name="clGravity" fixedwidth="16"/>
+					<column progid="DecalControls.CheckColumn" name="clImp" fixedwidth="16"/>
+					<column progid="DecalControls.CheckColumn" name="clYield" fixedwidth="16"/>
+					<column progid="DecalControls.CheckColumn" name="clVuln" fixedwidth="16"/>
+					<column progid="DecalControls.CheckColumn" name="clWar" fixedwidth="16"/>
+					<column progid="DecalControls.CheckColumn" name="clRings" fixedwidth="16"/>
+					<column progid="DecalControls.CheckColumn" name="clRings" fixedwidth="16"/>
+
+					<column progid="DecalControls.CheckColumn" name="clWeakeningCurse" fixedwidth="16"/>
+					<column progid="DecalControls.CheckColumn" name="clFesteringCurse" fixedwidth="16"/>
+					<column progid="DecalControls.CheckColumn" name="clCorruption" fixedwidth="16"/>
+					<column progid="DecalControls.CheckColumn" name="clDestructiveCurse" fixedwidth="16"/>
+					<column progid="DecalControls.CheckColumn" name="clCorrosion" fixedwidth="16"/>
+
+					<column progid="DecalControls.TextColumn" name="clMonName" fixedwidth="120"/>
+					<column progid="DecalControls.TextColumn" name="clPriority" fixedwidth="20"/>
+					<column progid="DecalControls.TextColumn" name="clDamageType" fixedwidth="56"/>
+					<column progid="DecalControls.TextColumn" name="clExVulnType" fixedwidth="56"/>
+					<column progid="DecalControls.TextColumn" name="clWeaponToUse" fixedwidth="80"/>
+					<column progid="DecalControls.TextColumn" name="clOffHand" fixedwidth="80"/>
+
+
+					<column progid="DecalControls.IconColumn" name="clMoveUp" fixedwidth="16"/>
+					<column progid="DecalControls.IconColumn" name="clMoveDown" fixedwidth="16"/>
+				</control>
+				<control progid="DecalControls.StaticText" name="Label_Mon_F" left="3" top="0" width="16" height="16" justify="Center" fontface="Times New Roman" fontsize="16" fontstyle=" bold" text="F"/>
+				<control progid="DecalControls.StaticText" name="Label_Mon_B" left="23" top="0" width="16" height="16" justify="Center" fontface="Times New Roman" fontsize="16" fontstyle=" bold" text="B"/>
+				<control progid="DecalControls.StaticText" name="Label_Mon_G" left="43" top="0" width="16" height="16" justify="Center" fontface="Times New Roman" fontsize="16" fontstyle=" bold" text="G"/>
+				<control progid="DecalControls.StaticText" name="Label_Mon_I" left="63" top="0" width="16" height="16" justify="Center" fontface="Times New Roman" fontsize="16" fontstyle=" bold" text="I"/>
+				<control progid="DecalControls.StaticText" name="Label_Mon_Y" left="83" top="0" width="16" height="16" justify="Center" fontface="Times New Roman" fontsize="16" fontstyle=" bold" text="Y"/>
+				<control progid="DecalControls.StaticText" name="Label_Mon_V" left="103" top="0" width="16" height="16" justify="Center" fontface="Times New Roman" fontsize="16" fontstyle=" bold" text="V"/>
+				<control progid="DecalControls.StaticText" name="Label_Mon_A" left="123" top="0" width="16" height="16" justify="Center" fontface="Times New Roman" fontsize="16" fontstyle=" bold" text="A" textcolor="192"/>
+				<control progid="DecalControls.StaticText" name="Label_Mon_R" left="143" top="0" width="16" height="16" justify="Center" fontface="Times New Roman" fontsize="16" fontstyle=" bold" text="R" textcolor="192"/>
+				<control progid="DecalControls.StaticText" name="Label_Mon_S" left="163" top="0" width="16" height="16" justify="Center" fontface="Times New Roman" fontsize="16" fontstyle=" bold" text="S" textcolor="192"/>
+
+				<control progid="DecalControls.StaticText" name="Label_Mon_Void_1" left="183" top="0" width="20" height="16" justify="Center" fontface="Times New Roman" fontsize="16" fontstyle=" bold" text="WC"/>
+				<control progid="DecalControls.StaticText" name="Label_Mon_Void_2" left="203" top="0" width="20" height="16" justify="Center" fontface="Times New Roman" fontsize="16" fontstyle=" bold" text="FC"/>
+				<control progid="DecalControls.StaticText" name="Label_Mon_Void_3" left="223" top="0" width="20" height="16" justify="Center" fontface="Times New Roman" fontsize="16" fontstyle=" bold" text="Cp" textcolor="192"/>
+				<control progid="DecalControls.StaticText" name="Label_Mon_Void_4" left="243" top="0" width="20" height="16" justify="Center" fontface="Times New Roman" fontsize="16" fontstyle=" bold" text="DC" textcolor="192"/>
+				<control progid="DecalControls.StaticText" name="Label_Mon_Void_5" left="263" top="0" width="20" height="16" justify="Center" fontface="Times New Roman" fontsize="16" fontstyle=" bold" text="Cs" textcolor="192"/>
+
+				<control progid="DecalControls.StaticText" name="Label45" left="272" top="0" width="88" height="16" justify="Center" fontface="Times New Roman" fontsize="16" fontstyle=" bold" text="Name"/>
+				<control progid="DecalControls.StaticText" name="Label_Mon_P" left="401" top="0" width="16" height="16" justify="Center" fontface="Times New Roman" fontsize="16" fontstyle=" bold" text="P"/>
+				<control progid="DecalControls.StaticText" name="Label47a" left="408" top="0" width="86" height="16" justify="Center" fontface="Times New Roman" fontsize="16" fontstyle=" bold" text="Dmg type"/>
+				<control progid="DecalControls.StaticText" name="Label47b" left="464" top="0" width="86" height="16" justify="Center" fontface="Times New Roman" fontsize="16" fontstyle=" bold" text="Ex. Vuln"/>
+				<control progid="DecalControls.StaticText" name="Label47c" left="556" top="0" width="87" height="16" justify="Center" fontface="Times New Roman" fontsize="16" fontstyle=" bold" text="Weapon"/>
+				<control progid="DecalControls.StaticText" name="Label47d" left="636" top="0" width="87" height="16" justify="Center" fontface="Times New Roman" fontsize="16" fontstyle=" bold" text="Offhand"/>
+
+				<control progid="DecalControls.Edit" name="txtNewMonster" left="8" top="136" width="388" height="16" imageportalsrc="4726" text=""/>
+				<control progid="DecalControls.PushButton" name="cmdNewMonster" left="404" top="136" width="50" height="16" text="Add"/>
+				<control progid="DecalControls.PushButton" name="cmdNewMonsterFromCur" left="462" top="136" width="50" height="16" text="Add Sel"/>
+
+			</control>
+		</page>
+		<page label="Items">
+			<control progid="DecalControls.FixedLayout" clipped="">
+				<control progid="DecalControls.StaticText" name="Label4a" left="0" top="0" width="320" height="16" justify="Center" fontface="Times New Roman" fontsize="16" fontstyle=" bold" text="Weapons / Wands / Shields / Pets"/>
+				<control progid="DecalControls.StaticText" name="Label4b" left="320" top="0" width="80" height="16" justify="Center" fontface="Times New Roman" fontsize="16" fontstyle=" bold" text="Hands"/>
+				<control progid="DecalControls.List" name="lstBuffItems" left="0" top="16" width="420" height="116">
+					<column progid="DecalControls.TextColumn" name="clWeaponName" fixedwidth="320"/>
+					<column progid="DecalControls.TextColumn" name="clHandedness" fixedwidth="80"/>
+				</control>
+				<control progid="DecalControls.PushButton" name="cmdNewWeapon" left="10" top="136" width="140" height="16" text="Add"/>
+				<control progid="DecalControls.PushButton" name="cmdNewWeapon_NoBuffs" left="170" top="136" width="140" height="16" text="Add (no buffs)"/>
+			</control>
+		</page>
+		<page label="Consumables">
+			<control progid="DecalControls.FixedLayout" clipped="">
+				<control progid="DecalControls.StaticText" name="Label7a" left="0" top="0" width="400" height="16" justify="Center" fontface="Times New Roman" fontsize="16" fontstyle=" bold" text="Gems / Food / Kits / Potions / Charges / Grenades / Lockpicks"/>
+				<control progid="DecalControls.List" name="lstExtraBuffItems" left="0" top="16" width="344" height="116">
+					<column progid="DecalControls.TextColumn" name="clExtraBuffItemsC1" fixedwidth="320"/>
+				</control>
+				<control progid="DecalControls.PushButton" name="cmdNewBuffItem" left="0" top="136" width="260" height="16" text="Add"/>
+				<control progid="DecalControls.PushButton" name="cmdAddAllPeas" left="264" top="136" width="80" height="16" text="Add All Peas"/>
+				<control progid="DecalControls.StaticText" name="Label7b" left="448" top="0" width="344" height="16" justify="Center" fontface="Times New Roman" fontsize="16" fontstyle=" bold" text="Excluded Scarab Types:"/>
+				<control progid="DecalControls.List" name="lstExcludedComponents" left="448" top="16" width="344" height="116">
+					<column progid="DecalControls.IconColumn" name="1" fixedwidth="16" />
+					<column progid="DecalControls.TextColumn" name="2" />
+				</control>
+				<control progid="DecalControls.PushButton" name="cmdNewExcludedComponent" left="448" top="136" width="344" height="16" text="Add Selected"/>
+			</control>
+		</page>
+		<page label="Buffs">
+			<control progid="DecalControls.FixedLayout" clipped="">
+				<control progid="DecalControls.StaticText" name="LabelBPa" left="0" top="0" width="320" height="16" justify="Center" fontface="Times New Roman" fontsize="16" fontstyle="bold" text="Extra Buff Spells (best similar will be used)"/>
+				<control progid="DecalControls.List" name="lstBuffSpells" left="0" top="16" width="320" height="116">
+					<column progid="DecalControls.TextColumn" name="clBuff" fixedwidth="320"/>
+				</control>
+				<control progid="DecalControls.PushButton" name="cmdNewBuffSpell" left="10" top="136" width="140" height="16" text="Add..."/>
+
+				<control progid="DecalControls.StaticText" name="LabelBPb" left="472" top="0" width="320" height="16" justify="Center" fontface="Times New Roman" fontsize="16" fontstyle="bold" text="Blacklisted Buff Families"/>
+				<control progid="DecalControls.List" name="lstAntiBuffSpells" left="472" top="16" width="320" height="116">
+					<column progid="DecalControls.TextColumn" name="clBuff" fixedwidth="320"/>
+				</control>
+				<control progid="DecalControls.PushButton" name="cmdNewAntiBuffSpell" left="472" top="136" width="140" height="16" text="Add..."/>
+			</control>
+		</page>
+		<page label="Route">
+			<control progid="DecalControls.FixedLayout" clipped="">
+				<control progid="DecalControls.StaticText" name="Label5" left="0" top="0" width="370" height="16" justify="Center" fontface="Times New Roman" fontsize="16" fontstyle=" bold" text="Navigation Waypoints"/>
+				<control progid="DecalControls.List" name="lstWaypoints" left="0" top="16" width="370" height="116">
+					<column progid="DecalControls.TextColumn" name="clWP" fixedwidth="330"/>
+					<column progid="DecalControls.TextColumn" name="clWPc" fixedwidth="30"/>
+				</control>
+        <!-- A layout containing stuff below the points list to make resizing easier -->
+        <control progid="DecalControls.FixedLayout" clipped="" name="layoutRouteBottomControls" left="0" top="136" width="370" height="16">
+          <control progid="DecalControls.Choice" name="cmbNavType" left="0" top="0" width="80" height="16" selected="0">
+            <option text="Circular" data=""/>
+            <option text="Linear" data=""/>
+            <option text="Follow" data=""/>
+            <option text="Once" data=""/>
+          </control>
+
+          <control progid="DecalControls.Choice" name="cmbNavInsertMode" left="198" top="0" width="120" height="16" selected="0">
+            <option text="Add to End" data=""/>
+            <option text="Insert Above" data=""/>
+          </control>
+          <control progid="DecalControls.Button" name="btnNavDown" left="322" top="0" height="16" width="16"/>
+          <control progid="DecalControls.Button" name="btnNavUp" left="338" top="0" height="16" width="16"/>
+          <control progid="DecalControls.Button" name="btnNavResetPoint" left="354" top="0" height="16" width="16"/>
+        </control>
+
+        <!-- Add -->
+				<control progid="DecalControls.PushButton" name="cmdNewWaypoint" left="376" top="16" width="88" height="16" text="Add"/>
+				<control progid="DecalControls.PushButton" name="cmdNavOpenVendor" left="470" top="16" width="88" height="16" text="Open Vendor"/>
+
+				<!-- Add Portal -->
+				<control progid="DecalControls.PushButton" name="cmdNewWaypointPortal" left="376" top="38" width="88" height="16" text="Add Portal/NPC"/>
+				<!-- control progid="DecalControls.PushButton" name="cmdNavCloseVendor" left="470" top="38" width="88" height="16" text="Close Vendor"/ -->
+
+				<!-- Add Recall -->
+				<control progid="DecalControls.PushButton" name="cmdNewRecall" left="376" top="60" width="88" height="16" text="Add Recall"/>
+				<control progid="DecalControls.Choice" name="cmbRecallType" left="470" top="60" width="120" height="16" selected="0">
+					<option text="Primary" data=""/>
+					<option text="Secondary" data=""/>
+					<option text="LS" data=""/>
+					<option text="LS Sending" data=""/>
+					<option text="Portal" data=""/>
+					<option text="Aphus" data=""/>
+					<option text="Sanctuary" data=""/>
+					<option text="Caul" data=""/>
+					<option text="GW" data=""/>
+					<option text="Aerlinthe" data=""/>
+					<option text="Mt. Lethe" data=""/>
+					<option text="Ulgrim's" data=""/>
+					<option text="Bur" data=""/>
+					<option text="PtOIA" data=""/>
+					<option text="Graveyard" data=""/>
+					<option text="Colosseum" data=""/>
+					<option text="Fac. Hub" data=""/>
+					<option text="Gear K. Camp" data=""/>
+					<option text="Neftet" data=""/>
+					<option text="Candeth" data=""/>
+					<option text="FacHub" data=""/>
+          <option text="Rynthid" data=""/>
+				</control>
+
+				<!-- Add Pause -->
+				<control progid="DecalControls.PushButton" name="cmdNewWaypointPause" left="376" top="82" width="88" height="16" text="Add Pause"/>
+				<control progid="DecalControls.Edit" name="txtPauseWaypointTime" left="470" top="82" width="68" height="16" imageportalsrc="4726" text="5"/>
+				<control progid="DecalControls.StaticText" name="Label52" left="543" top="82" width="50" height="16" text="seconds"/>
+
+				<!-- Add Chat -->
+				<control progid="DecalControls.PushButton" name="cmdNewWaypointChat" left="376" top="104" width="88" height="16" text="Add Chat"/>
+				<control progid="DecalControls.Edit" name="txtChatWaypoint" left="470" top="104" width="120" height="16" imageportalsrc="4726" text="/ls"/>
+
+			</control>
+		</page>
+		<page label="Meta">
+			<control progid="DecalControls.FixedLayout" clipped="">
+
+				<control progid="DecalControls.List" name="lstMetaRules" left="0" top="16" width="792" height="116">
+					<column progid="DecalControls.IconColumn" name="clDelete" fixedwidth="16"/>
+					<column progid="DecalControls.IconColumn" name="clMoveUp" fixedwidth="16"/>
+					<column progid="DecalControls.IconColumn" name="clMoveDown" fixedwidth="16"/>
+					<column progid="DecalControls.TextColumn" name="clState" fixedwidth="150" />
+					<column progid="DecalControls.TextColumn" name="clCondition" />
+					<column progid="DecalControls.TextColumn" name="clAction" />
+				</control>
+
+				<control progid="DecalControls.PushButton" name="cmdMetaCreate" left="462" top="136" width="50" height="16" text="Create"/>
+				<control progid="DecalControls.StaticText" name="lblmetacurrentstate" left="4" top="136" width="136" height="16" justify="Left" fontface="Times New Roman" fontsize="16" fontstyle=" bold" text="Current State:"/>
+				<control progid="DecalControls.Choice" name="cmbMetaCurrentState" left="140" top="136" width="120" height="16" selected="0">
+					<option text="---" data=""/>
+				</control>
+			</control>
+		</page>
+	</control>
+</view>

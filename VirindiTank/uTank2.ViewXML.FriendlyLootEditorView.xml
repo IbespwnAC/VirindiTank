@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- Icons: puzzle piece 8241, gear 9660 -->
+<view icon="8241" title="Virindi Tank Loot Editor" width="268" height="300">
+	<control progid="DecalControls.Notebook" name="Notebook1">
+	  <page label="Rules">
+		<control progid="DecalControls.FixedLayout" clipped="">
+		  <control progid="DecalControls.StaticText" name="LabelA1" left="4" top="2" width="80" height="16" text="Loot Rule:"/>
+		  <control progid="DecalControls.Choice" name="cmbRuleList" left="4" top="18" width="240" height="20" />
+
+		  <control progid="DecalControls.StaticText" name="LabelA2" left="100" top="140" width="150" height="16" text="This page not yet completed."/>
+		</control>
+	  </page >
+	  <page label="Names">
+		<control progid="DecalControls.FixedLayout" clipped="">
+		  <control progid="DecalControls.StaticText" name="LabelB1" left="4" top="2" width="80" height="16" text="Name match:"/>
+		  <control progid="DecalControls.StaticText" name="LabelB2" left="230" top="2" width="30" height="16" text="Exact"/>
+		  <control progid="DecalControls.List" name="lNames" left="4" top="18" width="260" height="180">
+			<column progid="DecalControls.TextColumn" name="clName" fixedwidth="228"/>
+			<column progid="DecalControls.CheckColumn" name="clExact" fixedwidth="32"/>
+		  </control>
+		  <control progid="DecalControls.StaticText" name="LabelB3" left="4" top="200" width="80" height="16" text="New name:"/>
+		  <control progid="DecalControls.Edit" name="txtNewName" left="4" top="212" width="196" height="16" imageportalsrc="4726" text=""/>
+		  <control progid="DecalControls.Checkbox" name="cExact" left="204" top="212" width="40" height="16" text="Ex." checked="true"/>
+		  <control progid="DecalControls.PushButton" name="bAddName" left="234" top="212" width="30" height="16" text="Add"/>
+		</control>
+	  </page >
+	</control >
+</view >

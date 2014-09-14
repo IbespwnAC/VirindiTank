@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<!-- Icons: puzzle piece 8241, gear 9660 -->
+<view icon="9660" title="Virindi Tank Advanced Options" width="392" height="300">
+	  <control progid="DecalControls.FixedLayout" clipped="">
+		<control progid="DecalControls.List" name="lOptionList" left="4" top="4" width="260" height="160">
+		  <column progid="DecalControls.TextColumn" name="clOpt" fixedwidth="180"/>
+		  <column progid="DecalControls.TextColumn" name="clVal" fixedwidth="62"/>
+		</control>
+		<control progid="DecalControls.StaticText" name="txtInfo" left="4" top="188" width="384" height="80" text=""/>
+		<control progid="DecalControls.Edit" name="txtEditbox" left="4" top="168" width="260" height="16" imageportalsrc="4726" text=""/>
+		<control progid="DecalControls.List" name="lFilterList" left="268" top="4" width="120" height="180">
+		  <column progid="DecalControls.CheckColumn" name="clEn" />
+		  <column progid="DecalControls.TextColumn" name="clSetting" />		  
+		</control>
+	  </control>
+</view>
